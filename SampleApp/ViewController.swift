@@ -25,33 +25,39 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count ?? 0;
+        return items.count > 0 ? items.count : 1;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SentenceItem", for: indexPath) as? SentenceTableViewCell else {
-            return UITableViewCell()
-        }
-//        cell.foodImage.image = UIImage(named: food[indexPath.row].image)
-//        cell.foodNameLabel.text = food[indexPath.row].name
-//        cell.addressLabel.text = food[indexPath.row].address
-        let item: SentenceDataObject? = items[indexPath.row]
-        if item != nil {
-            cell.InputLabel.text = item?.inputString
-            if item?.outputString != nil {
-                cell.ResultLabel.text = item?.outputString
-                cell.LoadingIndicator.isHidden = true
-                cell.LoadingIndicator.stopAnimating()
-            } else {
-                cell.LoadingIndicator.isHidden = false
-                cell.LoadingIndicator.startAnimating()
+        
+        if (items.count > 0) {
+        
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "SentenceItem", for: indexPath) as? SentenceTableViewCell else {
+                return UITableViewCell()
             }
+    //        cell.foodImage.image = UIImage(named: food[indexPath.row].image)
+    //        cell.foodNameLabel.text = food[indexPath.row].name
+    //        cell.addressLabel.text = food[indexPath.row].address
+            let item: SentenceDataObject? = items[indexPath.row]
+            if item != nil {
+                cell.InputLabel.text = item?.inputString
+                if item?.outputString != nil {
+                    cell.ResultLabel.text = item?.outputString
+                    cell.LoadingIndicator.isHidden = true
+                    cell.LoadingIndicator.stopAnimating()
+                } else {
+                    cell.LoadingIndicator.isHidden = false
+                    cell.LoadingIndicator.startAnimating()
+                }
+            }
+            return cell
+        } else {
+            return tableView.dequeueReusableCell(withIdentifier: "NoRecordCell", for: indexPath)
         }
-        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 75;
+        return items.count > 0 ? 75 : 44;
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

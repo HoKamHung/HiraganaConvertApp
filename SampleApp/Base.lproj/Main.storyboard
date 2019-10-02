@@ -55,6 +55,26 @@
                                             <outlet property="ResultLabel" destination="3dL-FD-Pmd" id="5Vg-lz-Htm"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoRecordCell" id="cE6-zB-eEa">
+                                        <rect key="frame" x="0.0" y="101" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="NoRecordCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cE6-zB-eEa" id="oax-4Y-sRa">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="記録なし" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdd-u6-1DQ">
+                                                    <rect key="frame" x="172.5" y="11.5" width="69.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Kdd-u6-1DQ" firstAttribute="centerY" secondItem="oax-4Y-sRa" secondAttribute="centerY" id="2Xi-07-9bG"/>
+                                                <constraint firstItem="Kdd-u6-1DQ" firstAttribute="centerX" secondItem="oax-4Y-sRa" secondAttribute="centerX" id="Ttw-cD-Sg7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="kW1-0Y-Ti6" id="m4m-cg-AJb"/>
