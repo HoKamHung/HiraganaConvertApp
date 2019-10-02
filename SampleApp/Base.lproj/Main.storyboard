@@ -63,7 +63,7 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWf-LK-fob" userLabel="OutOfSafeAreaView">
                                 <rect key="frame" x="0.0" y="846" width="414" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0009618469683" green="0.62801400539999996" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="UKP-Ny-mVQ"/>
                                 </constraints>
@@ -81,7 +81,7 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0009618469683" green="0.62801400539999996" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="mAC-16-WPL" firstAttribute="top" secondItem="Cry-NK-Z8Y" secondAttribute="top" constant="8" id="3t4-gW-Js7"/>
                                     <constraint firstAttribute="trailing" secondItem="mAC-16-WPL" secondAttribute="trailing" constant="8" id="FhZ-Tb-5rW"/>
@@ -123,6 +123,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2EO-4e-fBD">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0009618469683220221" green="0.62801400540860897" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="kW1-0Y-Ti6" kind="relationship" relationship="rootViewController" id="Bsl-nn-RcP"/>
