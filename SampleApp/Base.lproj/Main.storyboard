@@ -128,6 +128,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="ひらがな変更アプリ" id="Ezv-57-P2a"/>
                     <connections>
+                        <outlet property="BottomBarViewBottomConstraint" destination="nl3-3E-Uly" id="gTI-Q5-DyI"/>
                         <outlet property="inputField" destination="mAC-16-WPL" id="YS8-h0-3IR"/>
                         <outlet property="tableView" destination="RTa-qB-xQK" id="XGq-gW-sRO"/>
                     </connections>
