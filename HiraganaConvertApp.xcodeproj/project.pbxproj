@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		841A76EB2343B9F600B2E708 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		841A76EB2343B9F600B2E708 /* HiraganaConvertApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaConvertApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		841A76EE2343B9F600B2E708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		841A76F02343B9F600B2E708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		841A76F32343B9F600B2E708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		841A76E22343B9F500B2E708 = {
 			isa = PBXGroup;
 			children = (
-				841A76ED2343B9F600B2E708 /* SampleApp */,
+				841A76ED2343B9F600B2E708 /* HiraganaConvertApp */,
 				841A76EC2343B9F600B2E708 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		841A76EC2343B9F600B2E708 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				841A76EB2343B9F600B2E708 /* SampleApp.app */,
+				841A76EB2343B9F600B2E708 /* HiraganaConvertApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		841A76ED2343B9F600B2E708 /* SampleApp */ = {
+		841A76ED2343B9F600B2E708 /* HiraganaConvertApp */ = {
 			isa = PBXGroup;
 			children = (
 				841A76EE2343B9F600B2E708 /* AppDelegate.swift */,
@@ -73,15 +73,15 @@
 				841A77042343EE9F00B2E708 /* SentenceDataObject.swift */,
 				841A77062344BC5000B2E708 /* NetworkController.swift */,
 			);
-			path = SampleApp;
+			path = HiraganaConvertApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		841A76EA2343B9F600B2E708 /* SampleApp */ = {
+		841A76EA2343B9F600B2E708 /* HiraganaConvertApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 841A76FD2343B9F700B2E708 /* Build configuration list for PBXNativeTarget "SampleApp" */;
+			buildConfigurationList = 841A76FD2343B9F700B2E708 /* Build configuration list for PBXNativeTarget "HiraganaConvertApp" */;
 			buildPhases = (
 				841A76E72343B9F600B2E708 /* Sources */,
 				841A76E82343B9F600B2E708 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = SampleApp;
+			name = HiraganaConvertApp;
 			productName = SampleApp;
-			productReference = 841A76EB2343B9F600B2E708 /* SampleApp.app */;
+			productReference = 841A76EB2343B9F600B2E708 /* HiraganaConvertApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 841A76E62343B9F500B2E708 /* Build configuration list for PBXProject "SampleApp" */;
+			buildConfigurationList = 841A76E62343B9F500B2E708 /* Build configuration list for PBXProject "HiraganaConvertApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				841A76EA2343B9F600B2E708 /* SampleApp */,
+				841A76EA2343B9F600B2E708 /* HiraganaConvertApp */,
 			);
 		};
 /* End PBXProject section */
@@ -305,7 +305,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kevinhokh.com.SampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = kevinhokh.com.HiraganaConvertApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,7 +323,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kevinhokh.com.SampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = kevinhokh.com.HiraganaConvertApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -333,7 +333,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		841A76E62343B9F500B2E708 /* Build configuration list for PBXProject "SampleApp" */ = {
+		841A76E62343B9F500B2E708 /* Build configuration list for PBXProject "HiraganaConvertApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				841A76FB2343B9F700B2E708 /* Debug */,
@@ -342,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		841A76FD2343B9F700B2E708 /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
+		841A76FD2343B9F700B2E708 /* Build configuration list for PBXNativeTarget "HiraganaConvertApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				841A76FE2343B9F700B2E708 /* Debug */,
